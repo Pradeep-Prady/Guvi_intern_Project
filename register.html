@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+</head>
+<body>
+    <div class="container text-center row d-flex justify-content-center">
+        <div class="text-center box ">
+       
+            <form class="sign_in_form col text-center" name="myform2" onsubmit="return vfun1()" action="./php/register.php" method="POST">
+
+                <h2 class="title">Sign up</h2>
+    
+                <div class="input_field">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" name="uname1" placeholder="Username" required="" />
+                </div>
+
+                <div class="input_field">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" name="email1" placeholder="Email"  required=""/>
+                </div>
+
+                <div class="input_field">
+                  <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="upswd1" placeholder="Password"  required=""/>
+                  </div>
+
+
+                  <div class="input_field">
+                    <i class="fa-solid fa-lock"></i>
+                       <input type="password" name="upswd2" placeholder="Re-Enter  Password"  required=""  />
+                  </div>
+
+                  <div id="errorbox" class="errorbox"></div>
+
+                  <input type="submit" value="Register" name="regi" class="btn solid" />
+    
+                  <p class="social-text">Or Sign up with social platforms</p>
+                <div class="social-media row">
+                    <a href="#" class="social-icon col">
+                    <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="social-icon col">
+                    <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#" class="social-icon col">
+                    <i class="fab fa-google"></i>
+                      </a>
+                      <a href="#" class="social-icon col">
+                    <i class="fab fa-linkedin-in"></i>
+                      </a>
+                </div>
+    
+                <a href="./login.html"><p class="register-text">if you have account ?/ login here..</p></a>
+    
+                
+    
+            </form>
+          </div>
+    </div>
+
+    <script src="./js/register.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    
+        <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <div class="container text-center row d-flex justify-content-center">
+		<div class="box text-center">
+        
+			<form class="sign_in_form text-center"name="myform" onsubmit="return vfun()" action="./php/login.php" method="POST">
+				<h2 class="title">Sign in</h2>
+	
+				<div class="input_field">
+					<i class="fa-solid fa-envelope"></i>
+					<input type="email" name="email" placeholder="Email"  required=""/>
+				</div>
+				<div class="input_field">
+					<i class="fa-solid fa-lock"></i>
+					  <input type="password" name="pass" placeholder="Password"  required=""/>
+					</div>
+				<div id="errorbox"></div>
+				  <button type="submit" name="login" value="Login" class="btn solid" >login</button>
+	
+				  <p class="social-text">Or Sign in with social platforms</p>
+				<div class="social-media">
+					<a href="#" class="social-icon">
+					<i class="fab fa-facebook-f"></i>
+					  </a>
+					  <a href="#" class="social-icon">
+					<i class="fab fa-twitter"></i>
+					  </a>
+					  <a href="#" class="social-icon">
+					<i class="fab fa-google"></i>
+					  </a>
+					  <a href="#" class="social-icon">
+					<i class="fab fa-linkedin-in"></i>
+					  </a>
+				</div>
+	
+				<a href="./register.html"><p class="register-text">if you don't have account ?/ register here..</p></a>
+	
+				
+	
+			</form>
+	
+	
+		</div>
+	</div>
+	<script src="./js/login.js"></script>
+</body>
+</html>
